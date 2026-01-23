@@ -1,10 +1,16 @@
-export default function About() {
+"use client";
+
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+
+export default function Contact() {
   return (
-    <section className="p-8">
-      <h1 className="text-3xl font-semibold">About Me</h1>
-      <p className="mt-4 text-gray-600">
-        Java Developer with experience in Spring Boot and system design.
-      </p>
-    </section>
+    <form className="max-w-xl mx-auto p-8 space-y-4">
+      <Input placeholder="Your Name" />
+      <Input placeholder="Email" />
+      <Textarea placeholder="Message" />
+      <Button type="submit">Send</Button>
+    </form>
   );
 }
