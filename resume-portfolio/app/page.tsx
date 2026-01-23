@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center gap-6">
       <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 2 }}
+        animate={{ opacity: 1, y: -110 }}
         transition={{ duration: 0.6 }}
         className="text-4xl font-bold"
       >
@@ -17,8 +17,8 @@ export default function Home() {
 
       <motion.p
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
+        animate={{ opacity: 1, y: -100 }}
+        transition={{ delay: 0.8 }}
         className="text-gray-500"
       >
         Java Developer | System Design
@@ -26,8 +26,8 @@ export default function Home() {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
+        animate={{ opacity: 1, y: -90 }}
+        transition={{ delay: 1.0 }}
       >
         <Button>View Projects</Button>
       </motion.div>
