@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
+
 
 export default function Projects() {
   return (
@@ -16,6 +18,10 @@ export default function Projects() {
             <Badge>Next.js</Badge>
             <Badge>Spring Boot</Badge>
             <Badge>PostgreSQL</Badge>
+          </div>
+          <div className="flex justify-between items-center mt-4">
+            <span className="text-sm text-gray-500">View Project</span>
+            <ExternalLink className="w-4 h-4" />
           </div>
         </CardContent>
       </Card>
